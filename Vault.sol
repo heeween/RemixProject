@@ -39,7 +39,7 @@ s = aT / B
         }else {
             shares = (_amount * totalSupply) / token.balanceOf(address(this));
         }
-        _mint(msg.sender, _amount);
+        _mint(msg.sender, shares);
         token.transferFrom(msg.sender, address(this), _amount);
     }
 
